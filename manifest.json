@@ -1,0 +1,13 @@
+{
+  "name": "Bard Chat Saver",
+  "version": "1.0",
+  "description": "Saves the HTML with CSS formatting used in the website of the chat",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://bard.google.com/*"],
+      "js": ["contentscript.js"]
+    }
+  ],
+  "permissions": ["tabs", "contextMenus"]
+}
